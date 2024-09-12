@@ -1,0 +1,33 @@
+.encabezado{
+    display: flex;
+    left: 0;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.contenedor1{
+    background-color: white;
+    width: 400px;
+    height: 150px;
+}
+
+.contenedor2{
+    background: linear-gradient(to bottom right, white 50%, rgba(33, 33, 211, 0.5) 50%);
+    width: 100px;
+    height: 150px;
+}
+
+.contenedor3{
+    text-align: center;
+    align-content: center;
+    background-color: rgba(33, 33, 211, 0.5);
+    width: 1000px;
+    height: 150px;
+}          
+
+.logo{
+    width: 250px;
+    height: 100px;
+}

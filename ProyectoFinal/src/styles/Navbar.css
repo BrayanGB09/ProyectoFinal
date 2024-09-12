@@ -1,0 +1,15 @@
+.contenedorPrincipal{
+    display: flex;
+    gap: 50px;
+}
+
+.nav{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(255, 255, 0);
+    cursor: pointer;
+}
+
+.nav:hover{
+    color: white;
+}

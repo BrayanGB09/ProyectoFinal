@@ -1,0 +1,22 @@
+.contenedor{
+    display: flex;
+    gap: 1px;
+    left: 0;
+    height: 70px;
+    bottom: -200px;
+    position: relative;
+    width: 100%;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+}
+
+.logoIG{
+    position: relative;
+    top: 12px;
+    right: 10px;
+    width: 70px;
+    height: 40px;
+}
