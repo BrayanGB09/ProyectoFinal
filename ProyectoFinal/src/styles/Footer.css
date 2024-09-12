@@ -1,11 +1,16 @@
 .contenedor{
     display: flex;
     gap: 1px;
-    left: 0;
-    height: 70px;
-    bottom: -200px;
+    justify-content: center;
     position: relative;
     width: 100%;
+}
+
+.textFooter{
+    color: black;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
 }
 
 .btn{

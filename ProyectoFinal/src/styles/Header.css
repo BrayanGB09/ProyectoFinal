@@ -1,10 +1,11 @@
 .encabezado{
     display: flex;
     left: 0;
-    height: 70px;
+    height: 150px;
     top: 0;
     position: fixed;
     width: 100%;
+    background-color: rgb(11, 11, 110);
 }
 
 .contenedor1{
@@ -14,7 +15,7 @@
 }
 
 .contenedor2{
-    background: linear-gradient(to bottom right, white 50%, rgba(33, 33, 211, 0.5) 50%);
+    background: linear-gradient(to bottom right, white 50%, rgb(11, 11, 110) 50%);
     width: 100px;
     height: 150px;
 }
@@ -22,7 +23,7 @@
 .contenedor3{
     text-align: center;
     align-content: center;
-    background-color: rgba(33, 33, 211, 0.5);
+    background-color: rgb(11, 11, 110);
     width: 1000px;
     height: 150px;
 }          
