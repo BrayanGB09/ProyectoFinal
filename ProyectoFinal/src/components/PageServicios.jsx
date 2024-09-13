@@ -1,11 +1,11 @@
 import React from "react";
 
-function Servicios() {
+function PageServicios() {
     return (
         <div>
-
+            
         </div>
     )
 }
 
-export default Servicios
+export default PageServicios

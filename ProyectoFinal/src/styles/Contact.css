@@ -1,5 +1,92 @@
-.contact{
+body{
+    height: 100%;
     background-color: white;
+}
+
+.tituloContacto{
     color: black;
-    border: solid thin black;
+    font-size: larger;
+    line-height: 50px;
+}
+
+.whatsappContacto {
+    width: 40px;
+    height: 40px;
+}
+
+.divContacto{
+    display: flex;
+    gap: 10px;
+}
+
+.textoContacto{
+    font-size: 15px;
+    color: black;
+    align-content: center;
+}
+
+.divFacebook{
+    display: flex;
+    gap: 20px;
+}
+
+.textoFacebook{
+    font-size: 15px;
+    color: black;
+    align-content: center;
+}
+
+.contenedorContact{
+    display: grid;
+    grid-template-columns: 500px 300px 300px;
+}
+
+.formContact1{
+    background-color: white;
+    box-shadow: 0 2px 5px gray;
+    border-radius: 20px;
+}
+
+.formContact{
+    display: grid;
+    justify-content: center;
+}
+
+.labelFormContact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.textoFormContact{
+    align-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: black;
+}
+
+.btnContact{
+    color: white;
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.btnContact:hover{
+    background-color: #9191bd;
 }

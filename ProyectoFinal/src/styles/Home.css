@@ -1,4 +1,5 @@
 body{
+    height: 100%;
     background-color: white;
 }
 
@@ -7,7 +8,7 @@ body{
     display: grid;
     left: 0;
     height: 100%;
-    margin-top: 100px;
+    margin-top: 140px;
     width: 100%;
 }
 
@@ -29,12 +30,13 @@ body{
 
 .contenedorValores{
     border-radius: 20px;
-    box-shadow: 0 10px 40px -5px gray;
-    width: 450px;
+    box-shadow: 0px 0px 20px 0px #0000001a;
+    width: 470px;
     height: auto;
 }
 
 .infoValores{
+    padding: 10px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
     background-color: rgb(11, 11, 110);
@@ -49,25 +51,27 @@ body{
 }
 
 .textoValores{
-    margin-left: 7px;
+    margin-top: 5px;
+    margin-left: 10px;
     font-size: smaller;
     color: black;
     text-align: left;
 }
 
 .contenedorVariado{
-    width: 450px;
+    width: 500px;
     height: auto;
 }
 
 .contenedorMision{
     border-radius: 20px;
-    box-shadow: 0 10px 40px -5px gray;
+    box-shadow: 0px 0px 20px 0px #0000001a;
     width: 450px;
-    height: 150px;
+    height: 160px;
 }
 
 .infoMision{
+    padding: 10px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
     background-color: rgb(11, 11, 110);
@@ -82,6 +86,7 @@ body{
 }
 
 .textoMision{
+    margin-top: 5px;
     margin-left: 7px;
     font-size: smaller;
     color: black;
@@ -95,12 +100,13 @@ body{
 
 .contenedorVision{
     border-radius: 20px;
-    box-shadow: 0 10px 40px -5px gray;
+    box-shadow: 0px 0px 20px 0px #0000001a;
     width: 450px;
-    height: 170px;
+    height: 180px;
 }
 
 .infoVision{
+    padding: 10px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
     background-color: rgb(11, 11, 110);
@@ -115,6 +121,7 @@ body{
 }
 
 .textoVision{
+    margin-top: 5px;
     margin-left: 7px;
     font-size: smaller;
     color: black;
@@ -123,9 +130,9 @@ body{
 
 .contenedorFinalHome{
     border-radius: 20px;
-    box-shadow: 0 10px 40px -5px gray;
+    box-shadow: 0px 0px 20px 0px #0000001a;
     width: 450px;
-    height: 180px;
+    height: 170px;
 }
 
 .textoFinalHome{

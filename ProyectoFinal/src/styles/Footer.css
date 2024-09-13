@@ -1,5 +1,6 @@
 .contenedor{
     display: flex;
+    top: 0;
     gap: 1px;
     justify-content: center;
     position: relative;
@@ -20,7 +21,7 @@
 
 .logoIG{
     position: relative;
-    top: 12px;
+    bottom: 5px;
     right: 10px;
     width: 70px;
     height: 40px;
