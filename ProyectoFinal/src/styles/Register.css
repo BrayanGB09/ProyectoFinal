@@ -129,7 +129,7 @@ form{
     background-color: #9191bd;
 }
 
-.btnRegister{  
+.btnLogin{  
     background-color: white;
     border-radius: 20px;
     border: none;
@@ -139,11 +139,11 @@ form{
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
 }
 
-.btnRegister:hover{
+.btnLogin:hover{
     background-color: #9191bd;
 }
 
-.textRegister{
+.textLogin{
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -151,6 +151,6 @@ form{
     cursor: pointer;
 }
 
-.textRegister:hover{
+.textLogin:hover{
     color: black;
 }

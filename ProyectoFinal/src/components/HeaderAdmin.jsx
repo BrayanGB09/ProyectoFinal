@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "../images/Logo.jpg"
-import "../styles/Header.css"
-import NavbarComponent from "../components/Navbar";
+import "../styles/HeaderAdmin.css"
+import NavbarAdmin from "../components/NavbarAdmin";
 
-function Header() {
+function HeaderAdmin() {
     return (
         <header className="encabezado">
             <div className="contenedor1">
@@ -15,10 +15,10 @@ function Header() {
             </div>
 
             <div className="contenedor3">
-                <NavbarComponent />
+                <NavbarAdmin />
             </div>
         </header>
     )
 }
 
-export default Header
+export default HeaderAdmin

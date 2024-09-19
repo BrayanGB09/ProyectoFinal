@@ -1,19 +1,11 @@
 import React from "react";
-import Header from "../components/Header"
-import Footer from "../components/Footer";
-import WhatsAppButton from "../components/GloboWhatssap";
+import PageServicios from "../components/PageServicios";
 
 
 function Prueba() {
     return (
         <div>
-            <Header />
-                
-            <h1>Hola Mundo</h1>
-
-            <WhatsAppButton />
-                
-            <Footer />
+            <PageServicios />
         </div>
     )
 }

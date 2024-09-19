@@ -3,6 +3,7 @@ import Swal from 'sweetalert2'
 import { Link } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import GetUsers from '../services/GetUsers'
+import PostAutenticado from "../services/PostAutenticados";
 import { useNavigate } from "react-router-dom";
 import 'boxicons'
 import '../styles/Login.css'
@@ -53,7 +54,7 @@ function  cargaNombre(event) {
               showConfirmButton: false,
               timer: 4000
             });
-                              
+            await PostAutenticado(true);   
             navigate("/Home")
 
             }else{

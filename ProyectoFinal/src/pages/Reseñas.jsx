@@ -1,36 +1,21 @@
-import React from "react";
+import React from "react"
+import CommentBox from "../components/FormReseñas"
 import Header from "../components/Header"
-import Footer from "../components/Footer";
-import WhatsAppButton from "../components/GloboWhatssap";
-import '../styles/Reseñas.css'
+import Footer from "../components/Footer"
 
 function Reseñas() {
     return (
         <div>
             <Header />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            
-            <h1 className="res">Recensioni</h1>
 
-            <WhatsAppButton />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <CommentBox />  
+            
+                <br />
+                <br />
+                <br />
+
             <Footer />
-        </div>
+       </div>
     )
 }
 

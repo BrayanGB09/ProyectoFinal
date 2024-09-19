@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/GloboWhatssap";
 import '../styles/Servicios.css'
+import ImageList from "../components/ImageList";
 
 
 function Servicios() {
@@ -20,7 +21,7 @@ function Servicios() {
             <br />
             <br />
             <br />
-                
+            <ImageList />
             <h1 className="ser">Servizi</h1>
 
             <WhatsAppButton />

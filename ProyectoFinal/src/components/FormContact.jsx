@@ -1,11 +1,13 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
+import { Link } from "react-router-dom";
 import '../styles/Contact.css'
 import Ubicacion from './Ubicacion';
 import Facebook from '../images/Facebook.png'
+import Gmail from '../images/Gmail.png'
 
-export const PageContact = () => {
+export const FormContact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -60,15 +62,29 @@ export const PageContact = () => {
         <h3 className='textoContacto'>+506 8814 5009</h3>
       </div>
       </label>
+
+            <br />
             <br />
       
       <label>
         <div className='divFacebook'>
-        <img src={Facebook} alt="Facebook" /> 
-        <h3 className='textoFacebook'>Facebook</h3>
+        <Link to="https://www.facebook.com/nosarapowersolutions?mibextid=ZbWKwL" className='nav' ><img src={Facebook} alt="Facebook" /></Link>
+        <h3 className='textoFacebook'>Nosara POWER Solutions</h3>
+        </div>
+      </label>
+        
+        <br />
+        <br />
+
+      <label>
+        <div className='divGmail'>
+        <img src={Gmail} alt="Gmail" className='imgGmail' /> 
+        <h3 className='textoFacebook'>titonosara@gmail.com</h3>
         </div>
       </label>
     </div>
+
+    
 
 <div className='formContact1'>
     <form ref={form} onSubmit={sendEmail} className='formContact'>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Home.css"
+import Banner from "./Banner";
 
 function PageHome() {
     return (
@@ -45,6 +46,8 @@ function PageHome() {
                         <br />
                     <b className="negrita">Respeto:</b> El respeto es el valor fundamental en nuestra empresa, que debe prevalecer en todas nuestras relaciones, ya sea entre jefes y colaboradores, o hacia nuestros clientes.
                 </h3>
+
+                    <Banner />
                 </div>
                 </div>
                 <div className="contenedorVariado">

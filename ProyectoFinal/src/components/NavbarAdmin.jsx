@@ -5,9 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/Navbar.css'
+import '../styles/NavbarAdmin.css'
 
-function NavbarComponent() {
+function NavbarAdmin() {
   return (
     <>
       {[false].map((expand) => (
@@ -60,4 +60,4 @@ function NavbarComponent() {
   );
 }
 
-export default NavbarComponent;
+export default NavbarAdmin;

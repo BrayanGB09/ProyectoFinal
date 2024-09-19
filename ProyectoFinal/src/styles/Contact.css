@@ -36,6 +36,16 @@ body{
     align-content: center;
 }
 
+.divGmail{
+    display: flex;
+    gap: 20px;
+}
+
+.imgGmail{
+    width: 30px;
+    height: 25px;
+}
+
 .contenedorContact{
     display: grid;
     grid-template-columns: 500px 300px 300px;

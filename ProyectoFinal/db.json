@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "a3dd",
+      "nombre": "Brayan",
+      "correo": "brayan@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "autenticados": [],
+  "images": []
+}

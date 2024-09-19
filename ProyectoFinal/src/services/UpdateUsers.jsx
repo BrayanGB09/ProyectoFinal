@@ -1,15 +1,14 @@
-async function PostUsers(nombre,correo,password) {
+async function PutUsers(nombre, correo, password, id) {
     try {
      
         const userData = { 
-            nombre,
+            nombre, 
             correo,
-            password
+            password 
         
         };
-
-        const response = await fetch("http://localhost:3001/users", {
-            method: 'POST',
+        const response = await fetch("http://localhost:3001/users/"+id, {
+            method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -18,12 +17,10 @@ async function PostUsers(nombre,correo,password) {
 
      
         return await response.json();
-
-        
     } catch (error) {
-        console.error('Error posting user:', error);
+        console.error('Error update user:', error);
         throw error;
     }
 }
 
-export default PostUsers;
+export default PutUsers;

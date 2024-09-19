@@ -4,7 +4,6 @@
     gap: 1px;
     justify-content: center;
     position: relative;
-    width: 100%;
 }
 
 .textFooter{
@@ -21,7 +20,7 @@
 
 .logoIG{
     position: relative;
-    bottom: 5px;
+    bottom: 7px;
     right: 10px;
     width: 70px;
     height: 40px;

@@ -1,19 +1,13 @@
-async function PostUsers(nombre,correo,password) {
+async function PostAutenticado(autentificacion) {
+    
     try {
      
-        const userData = { 
-            nombre,
-            correo,
-            password
-        
-        };
-
-        const response = await fetch("http://localhost:3001/users", {
+        const response = await fetch("http://localhost:3001/autenticados", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(userData)
+            body: JSON.stringify(autentificacion)
         });
 
      
@@ -26,4 +20,4 @@ async function PostUsers(nombre,correo,password) {
     }
 }
 
-export default PostUsers;
+export default PostAutenticado;
