@@ -1,14 +1,14 @@
-async function PostProyectos(proyect) {
-    
+async function PostProyectos(images) {
+
     try {
-        const response = await fetch('http://localhost:3001/proyects', {
+        const response = await fetch('http://localhost:3001/images', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(proyect)
+            body: JSON.stringify(images),
         });
-        if (!response.ok) {
+        if (response.ok) {
             throw new Error(`Error: ${response.status} ${response.statusText}`);
         }
         const data = await response.json();

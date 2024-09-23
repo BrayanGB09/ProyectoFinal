@@ -1,12 +1,12 @@
 import React from 'react';
-import '../styles/GloboWhatsapp.css'  // Importa el archivo CSS
+import '../styles/GloboWhatsapp.css' 
 
 const WhatsAppButton = () => {
-  const phoneNumber = "50662477920";  // Tu número de WhatsApp
+  const phoneNumber = "50688145009";
   const message = "¡Hola! Me gustaría obtener más información.";
 
   const openWhatsApp = () => {
-    const url = `https://wa.me/${phoneNumber}?text=${encodeComponent(message)}`;
+    const url = `https://api.whatsapp.com/send${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 

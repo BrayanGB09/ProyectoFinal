@@ -1,38 +1,23 @@
 import React from "react";
-import Header from "../components/Header"
+import Header from "../components/Header";
+import PageServicios from "../components/PageServicios";
 import Footer from "../components/Footer";
-import WhatsAppButton from "../components/GloboWhatssap";
-import '../styles/Servicios.css'
-import ImageList from "../components/ImageList";
 
 
 function Servicios() {
     return (
         <div>
             <Header />
-            <br />
-            <br />
+ 
+            <PageServicios />
 
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <ImageList />
-            <h1 className="ser">Servizi</h1>
+                <br />
+                <br />
+                <br />
+                <br />
 
-            <WhatsAppButton />
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-               
             <Footer />
+                
         </div>
     )
 }

@@ -4,11 +4,11 @@ import GetAutenticados from '../services/GetAutenticados';
 
 const ProtectedRoute = ({ children }) => {
     
-    const estaAutenticado =  GetAutenticados(); 
+    const estaAutenticado = GetAutenticados(); 
 
     if (!estaAutenticado) {
        
-        return <Navigate to="/AccesoDenegado" />;
+        return <Navigate to="/Login" />;
 
     }
 

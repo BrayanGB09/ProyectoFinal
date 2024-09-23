@@ -3,7 +3,6 @@ import Header from "../components/Header"
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/GloboWhatssap";
 import '../styles/AboutUs.css'
-import Banner from "../components/Banner";
 
 function AboutUs() {
     return (
@@ -20,7 +19,7 @@ function AboutUs() {
             <br />
             <br />
                 
-            <h1 className="about">Chi siamo</h1>
+            <h1 className="about">Historia</h1>
 
             <WhatsAppButton />
 

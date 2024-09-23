@@ -27,7 +27,6 @@ useEffect(() => {
   }, []);
   
 function  cargaNombre(event) {
-
     setNombre(event.target.value);
   }
 
@@ -92,9 +91,7 @@ function  cargaNombre(event) {
             <div className="information">
                 <div className="info-childs">
                     <h2>Bienvenido</h2>
-                    <p>Para unirte a nuestra comunidad por favor inicia 
-                    sesión con tus datos</p>
-                    <button className="btnLogin"><Link to="/Login" className="textLogin" >Iniciar Sesión</Link></button>
+                    <button className="btnLogin"><Link to="/Administrador" className="textLogin" >Regresar</Link></button>
                 </div>
             </div>
     
@@ -115,6 +112,15 @@ function  cargaNombre(event) {
                         <br />
                     
                     <input className="input" type="password" id="password"  name="password" placeholder="Contraseña" value={password} onChange={cargaPassword} required />
+
+                        <br />
+                        <br />
+
+                    <select className="input">
+                        <option className="options">Seleccionar</option>
+                        <option className="options">Administrador</option>
+                        <option className="options">Trabajador</option>
+                    </select>
 
                         <br />
                         <br />

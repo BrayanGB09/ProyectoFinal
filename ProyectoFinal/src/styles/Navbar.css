@@ -6,6 +6,11 @@
     background-color: white;
 }
 
+.navBrand {
+    display: flex;
+    gap: 20px;
+}
+
 .btn-close {
     opacity: none;
     background-color: white;

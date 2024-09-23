@@ -8,13 +8,13 @@ async function GetAutenticados() {
         });
 
         if (!response.ok) {
-            throw new Error('Error fetching users');
+            throw new Error('Error fetching autenticados');
         }
 
-        const users = await response.json();
-        return users;
+        const autenticados = await response.json();
+        return autenticados;
     } catch (error) {
-        console.error('Error fetching users:', error);
+        console.error('Error fetching autenticados:', error);
         throw error;
     }
 }

@@ -1,5 +1,10 @@
-async function PostAutenticado(autentificacion) {
+async function PostAutenticado(correo, password) {
     
+    const autenticados = {
+        correo,
+        password,
+    }
+
     try {
      
         const response = await fetch("http://localhost:3001/autenticados", {
@@ -7,7 +12,7 @@ async function PostAutenticado(autentificacion) {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(autentificacion)
+            body: JSON.stringify(autenticados)
         });
 
      
@@ -15,7 +20,7 @@ async function PostAutenticado(autentificacion) {
 
         
     } catch (error) {
-        console.error('Error posting user:', error);
+        console.error('Error posting autenticados:', error);
         throw error;
     }
 }

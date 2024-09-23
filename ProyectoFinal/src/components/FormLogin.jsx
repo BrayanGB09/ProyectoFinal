@@ -3,14 +3,14 @@ import Swal from 'sweetalert2'
 import { Link } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import GetUsers from '../services/GetUsers'
-import PostAutenticado from "../services/PostAutenticados";
+import PostAutenticados from '../services/PostAutenticados'
 import { useNavigate } from "react-router-dom";
 import 'boxicons'
 import '../styles/Login.css'
 
 function FormLogin() {
   
-  const [nombre, setNombre] = useState('');
+  const [correo, setCorreo] = useState('');
   const [password, setPassword] = useState('');
 
   const [users, setUsers] = useState([]);
@@ -28,9 +28,9 @@ function FormLogin() {
     }, []);
 
 
-function  cargaNombre(event) {
-    setNombre(event.target.value);
-}
+  const cargaCorreo = (event) => {
+    setCorreo(event.target.value);
+  };
 
   const cargaPassword = (event) => {
     setPassword(event.target.value);
@@ -38,7 +38,7 @@ function  cargaNombre(event) {
 
   const cargar = async () => {
  
-    console.log('Nombre:', nombre);
+    console.log('Correo:', correo);
     console.log('Contraseña:', password);
 
     const lista = await GetUsers();
@@ -46,7 +46,7 @@ function  cargaNombre(event) {
        
         for (let index = 0; index < lista.length; index++) {
    
-           if (lista[index].nombre === nombre && lista[index].password === password) {
+           if (lista[index].correo === correo && lista[index].password === password) {
             Swal.fire({
               position: "top-center",
               icon: "success",
@@ -54,8 +54,8 @@ function  cargaNombre(event) {
               showConfirmButton: false,
               timer: 4000
             });
-            await PostAutenticado(true);   
-            navigate("/Home")
+            await PostAutenticados(correo, password)
+            navigate("/Administrador")
 
             }else{
               Swal.fire({
@@ -74,10 +74,8 @@ function  cargaNombre(event) {
         <div className="container-form login hide">
             <div className="information">
                 <div className="info-childs">
-                    <h2>Crea tu cuenta</h2>
-                    <p>¿Aún no tienes una cuenta? 
-                    Creála y únete a nuestra comunidad</p>
-                    <button className="btnRegister"><Link to="/Register" className="textRegister" >Crear Cuenta</Link></button>
+                    <h1>Bienvenido</h1>
+                    <button className="btnRegister"><Link to="/Home" className="textLogin" >Regresar</Link></button>
                 </div>
             </div>
 
@@ -89,7 +87,7 @@ function  cargaNombre(event) {
          
                     <label className="label">
                         <box-icon name='user' ></box-icon>
-                        <input className="input" type="text" id="nombre" name="nombre" placeholder="Nombre Completo" value={nombre} onChange={cargaNombre} required />
+                        <input className="input" type="email" id="correo"  name="correo" placeholder="Correo Electrónico" value={correo} onChange={cargaCorreo} required />
                     </label>
 
                     <label className="label">

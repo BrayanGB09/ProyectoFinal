@@ -11,6 +11,7 @@ import Administrador from '../pages/Administrador';
 import Proyectos from '../pages/Proyectos';
 import Register from '../pages/Register';
 import Marcas from '../pages/Marcas';
+import ProtectedRoute from '../routes/ProtectedRoutes'; 
 
 const Routing = () => {
   return (
@@ -18,9 +19,9 @@ const Routing = () => {
      <Routes>
        <Route path="/" element={ "" } />
        <Route path='/Login' element={<Login />} />
-       <Route path="/Register" element={<Register />} />
+       <Route path="/Register" element={<ProtectedRoute><Register /></ProtectedRoute>} />
        <Route path='/Home' element={<Home />} />
-       <Route path="/Administrador" element={<Administrador />} />
+       <Route path="/Administrador" element={<ProtectedRoute><Administrador /></ProtectedRoute>} />
        <Route path="/Servicios" element={<Servicios />} />
        <Route path="/Proyectos" element={<Proyectos />} />
        <Route path="/Marcas" element={<Marcas />} />

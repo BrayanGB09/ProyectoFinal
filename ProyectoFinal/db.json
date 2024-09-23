@@ -7,6 +7,17 @@
       "password": "123456"
     }
   ],
-  "autenticados": [],
+  "autenticados": [
+    {
+      "id": "1f7e",
+      "correo": "brayan@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "d77d",
+      "correo": "brayan@gmail.com",
+      "password": "123456"
+    }
+  ],
   "images": []
 }
