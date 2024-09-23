@@ -14,7 +14,7 @@ async function PostProyectos(images) {
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('Error posting proyect:', error);
+        console.error('Error posting project:', error);
         throw error;
     }
 }

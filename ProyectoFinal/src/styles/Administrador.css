@@ -1,4 +1,47 @@
 .imageform{
-    width: 200px;
-    height: 300px;
+    width: 100px;
+    height: 150px;
+}
+
+.contenedorAdmin{ 
+    background-color: white;
+    box-shadow: 0 2px 5px gray;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.formAdmin{
+    display: grid;
+    justify-content: center;
+}
+
+.labelFormAdmin{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.inputAdmin{
+    align-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: black;
+}
+
+.btnAdmin2{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    inline-size: 200px;
+    margin: auto;
 }

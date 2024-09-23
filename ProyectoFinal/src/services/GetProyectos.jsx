@@ -8,12 +8,12 @@ async function GetProyectos() {
         });
     
         if (!response.ok) {
-            throw new Error('Error fetching images');
+            throw new Error('Error fetching project');
         }
         const data = await response.json();
             return data;
         } catch (error) {
-        console.error('Error fetching images:', error);
+        console.error('Error fetching project:', error);
         throw error;
     }
 }

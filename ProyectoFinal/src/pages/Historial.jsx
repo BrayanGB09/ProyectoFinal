@@ -1,16 +1,15 @@
 import React from "react";
+import PageHistorial from "../components/PageHistorial";
 import HeaderAdmin from "../components/HeaderAdmin";
-import FormAdmin from "../components/FormAdmin";
 
-
-function Administrador() {
+function Historial() {
     return (
         <div>
             <HeaderAdmin />
 
-            <FormAdmin />
+            <PageHistorial />
         </div>
     )
 }
 
-export default Administrador
+export default Historial

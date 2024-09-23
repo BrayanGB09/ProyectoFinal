@@ -34,6 +34,7 @@ function NavbarComponent() {
                   <Link to="/ABoutUs" className="nav">¿Quiénes somos?</Link>
                   <Link to="/Reseñas" className="nav">Reseñas</Link>
                   <Link to="/Contact" className="nav">Contacto</Link>
+                    
                     <br />
                     <br />
                     <br />
@@ -46,6 +47,8 @@ function NavbarComponent() {
                     <br />
                     <br />
                     <br />
+                    <br />
+                    
                   <h3 className='navText'>Solo administradores</h3>                 
                   <Link to="/Login" className='nav'>Iniciar sesión</Link>
                 </Nav>

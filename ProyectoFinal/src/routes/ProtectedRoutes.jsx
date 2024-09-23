@@ -6,10 +6,9 @@ const ProtectedRoute = ({ children }) => {
     
     const estaAutenticado = GetAutenticados(); 
 
-    if (!estaAutenticado) {
+    if (!estaAutenticado ) {
        
-        return <Navigate to="/Login" />;
-
+        return <Navigate to="/" />;
     }
 
     return children;

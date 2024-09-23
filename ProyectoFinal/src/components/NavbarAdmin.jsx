@@ -28,7 +28,7 @@ function NavbarAdmin() {
     }, []);
 
     const eliminarAutenticados = (id) => {
-    
+      setAutenticados(autenticados.filter((id) => autenticados.id !== id));
       DeleteAutenticados(id);
       navigate("/Login")
     }
@@ -62,6 +62,8 @@ function NavbarAdmin() {
                   <Link to="/Reseñas" className="nav">Reseñas</Link>
                   <Link to="/Contact" className="nav">Contacto</Link>
                   <Link to="/Administrador" className="nav">Administrador</Link>
+                  <Link to="/Historial" className='nav' >Historial</Link>
+                  
                     <br />
                     <br />
                     <br />
@@ -73,7 +75,7 @@ function NavbarAdmin() {
                     <br />
                     <br />
                     <br />
-                    <br />
+
                   <h3 className='navText'>Solo administradores</h3>                 
                   <Link to="/Login" className='nav'>Iniciar sesión</Link>
                 </Nav>

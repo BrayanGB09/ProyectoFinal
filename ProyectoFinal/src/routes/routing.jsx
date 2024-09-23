@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Prueba from '../pages/prueba';
+import Historial from '../pages/Historial';
 import Login from '../pages/Login';
 import Home from '../pages/Home';
 import Contact from '../pages/Contact';
@@ -28,7 +28,7 @@ const Routing = () => {
        <Route path="/AboutUs" element={<AboutUs />} />
        <Route path="/Reseñas" element={<Reseñas />} />
        <Route path='/Contact' element={<Contact/>} />
-       <Route path='/Prueba' element={<Prueba />} />
+       <Route path='/Historial' element={<Historial />} />
      </Routes>
     </Router>
    );

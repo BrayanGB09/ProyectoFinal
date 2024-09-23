@@ -1,6 +1,6 @@
 .contenedor{
     display: flex;
-    top: 0;
+    bottom: 0;
     gap: 1px;
     justify-content: center;
     position: relative;

@@ -5,14 +5,14 @@ async function DeleteProyectos(id) {
       });
 
       if (response.ok) {
-        console.log('Imagen eliminada correctamente');
-      } else {
-        console.log('Error al eliminar la imagen');
-      }
+        throw new Error(`Error deleting project with id ${id}`);
+      } 
+      return { message: `Project with id ${id} deleted successfully` };
     } 
     
     catch (error) {
-      console.error('Error al eliminar la imagen:', error);
+      console.error('Error deleting project:', error);
+      throw error;
     }
 };
 

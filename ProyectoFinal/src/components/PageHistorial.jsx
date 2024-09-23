@@ -1,33 +1,31 @@
 import React, { useEffect, useState } from 'react';
-import DeleteProyectos from '../services/DeleteProyectos';
 import GetProyectos from '../services/GetProyectos';
-import Swal from 'sweetalert2'
-import '../styles/Historial.css'
+import DeleteProyectos from '../services/DeleteProyectos';
+import Swal from 'sweetalert2';
+import '../styles/Historial.css';
 
-const ImageGallery = () => {
+const PageHistorial = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
     const fetchImages = async () => {
       const data = await GetProyectos();
-          
       setImages(data);
- 
     };
     fetchImages();
   }, []);
 
-const eliminarImagen = async (id) => {
-  
-    await DeleteProyectos (id) 
+  const eliminarImagen = async (id) => {
+    setImages(images.filter((image) => image.id !== id));
+    await DeleteProyectos(id);
     Swal.fire({
-      position: "top-center",
-      icon: "success",
-      title: "¡Imagen eliminada correctamente!",
+      position: 'top-center',
+      icon: 'success',
+      title: '¡Imagen eliminada correctamente!',
       showConfirmButton: false,
-      timer: 3000
+      timer: 3000,
     });
-} 
+  };
 
   return (
     <div>
@@ -37,8 +35,7 @@ const eliminarImagen = async (id) => {
           <div key={image.id}>
             <img className='imageform' src={image.image} alt={image.name} />
             <p>{image.name}</p>
-            <button onClick={e => eliminarImagen(image.id)}>Eliminar</button>
-            
+            <button className='btnAdmin' onClick={() => eliminarImagen(image.id)}>Eliminar</button>
           </div>
         ))}
       </div>
@@ -46,5 +43,4 @@ const eliminarImagen = async (id) => {
   );
 };
 
-export default ImageGallery;
-
+export default PageHistorial;
